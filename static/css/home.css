@@ -16,21 +16,35 @@ body::-webkit-scrollbar{
 }
 
 nav{
-    position: sticky;
-    background-color: white;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
     top: 0;
+    right: 0;
+    left: 0;
     z-index: 1;
+}
+
+main{
+    margin-top: 80px;
 }
 
 .navbar{
     margin: 0;
     display: flex;
     padding: 20px;
+    display: flex;
+}
+
+.to{
+    display: flex;
+    width: 20%;
+    margin-left: auto;
 }
 
 .navbar a{
     text-decoration: none;
-    color: black;
+    color: white;
     margin-left: 20px;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
@@ -117,8 +131,11 @@ nav{
 }
 
 .skills-con h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     margin-left: 30px;
-    padding-top: 20px;
+    padding-top: 13px;
     margin-bottom: 0;
 }
 
@@ -225,12 +242,8 @@ nav{
     border-top-right-radius: 10px;
 }
 
-.card2 img{
-    width: 50%;
-    height: 100px;
-    margin-left: 25%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+.card2{
+    padding-right: 20px;
 }
 
 .card:hover{
@@ -268,6 +281,10 @@ nav{
     color: black;
     margin: 0;
     margin-left: 15px;
+}
+
+.info{
+    
 }
 
 footer{
