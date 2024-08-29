@@ -303,3 +303,108 @@ footer .social{
     margin-left: auto;
     margin-right: 45px;
 }
+
+.github_contributions iframe{
+    width: 95%;
+    height: 130px;
+}
+
+@media (max-width: 960px){
+    
+    .skills-con{
+        font-size: 0.8rem;
+    }
+
+    .github_contributions{
+        font-size: 0.8rem;
+    }
+
+    .contri{
+        width: 20%;
+    }
+
+}
+
+
+@media (max-width: 700px){
+    
+    .skills_github_con{
+        display: block;
+    }
+
+    .skills-con{
+        width: 95%;
+        font-size: 1rem;
+    }
+
+    .github_contributions{
+        width: 95%;
+        font-size: 1rem;
+    }
+
+    .container img{
+        width: 25%;
+    }
+
+    .projects_card a{
+        min-width: 40%;
+        max-width: 40%;
+    }
+}
+
+@media (max-width: 400px){
+    .container img{
+        width: 30%;
+    }
+
+    .info{
+        margin-top: 0px;
+        position: relative;
+        top: 15px;
+    }
+
+    .info h2{
+        font-size: 1.3rem;
+        color: white;
+    }
+
+    .social a{
+        font-size: 20px;
+    }
+
+    #element{
+        font-size: 1rem;
+        color: white;
+    }
+
+    .navbar .to{
+        width: 50%;
+    }
+
+    .skills-con{
+        width: 95%;
+        font-size: 0.75rem;
+    }
+
+    .github_contributions{
+        font-size: 0.75rem;
+    }
+
+    .github_contributions iframe{
+        width: 85%;
+    }
+
+    .projects_card a{
+        min-width: 99%;
+        max-width: 99%;
+    }
+
+    .projects_card{
+        min-width: 70%;
+    }
+
+    footer h4{
+        font-size: 1rem;
+    }
+
+}
