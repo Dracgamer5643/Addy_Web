@@ -1,410 +1,154 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://cdn-uicons.flaticon.com/2.5.1/uicons-brands/css/uicons-brands.css');
-@import url('https://cdn-uicons.flaticon.com/2.5.1/uicons-brands/css/uicons-brands.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css');
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css');
 
-
-body{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #474747;
+::-webkit-scrollbar{
+    display: none;
 }
 
-body::-webkit-scrollbar{
-    display: none;
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #001F3F;
 }
 
 nav{
-    position: fixed;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1;
-}
-
-main{
-    margin-top: 80px;
-}
-
-.navbar{
-    margin: 0;
-    display: flex;
-    padding: 20px;
-    display: flex;
-}
-
-.to{
-    display: flex;
-    width: 20%;
-    margin-left: auto;
-}
-
-.navbar a{
-    text-decoration: none;
-    color: white;
-    margin-left: 20px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.navbar li{
-    list-style: none;
-}
-
-.addy_info{
-    width: 95%;
-    margin: auto;
-    background: url('https://i.pinimg.com/564x/84/f5/53/84f5533218ae3fbc050349d5d1937d13.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    margin-top: 2%;
-    border-radius: 10px;
-}
-
-.container img{
-    width: 15%;
-    border-radius: 50%;
-    margin-left: 5%;
-}
-
-.container{
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    backdrop-filter: blur(5px);
-    border-radius: 10px;
-}
-
-.info{
-    margin-left: 3%;
-    margin-top: 30px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.info span{
-    margin: 0;
-    font-size: 1.2rem;
-    font-weight: 400;
-}
-
-.info h2{
-    margin: 0;
-    font-size: 2rem;
-    user-select: none;
-}
-
-.social{
-    padding: 0;
-    display: flex;
-    margin-top: 5px;
-}
-
-.social a, li{
-    text-decoration: none;
-    list-style: none;
-}
-
-.social a{
-    margin-right: 8%;
-    color: white;
-    font-size: 2rem;
-}
-
-.skills-con{
-    width: 36%;
-    border-radius: 10px;
-    margin-left: 2.8%;
-    height: fit-content;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    background-color: black;
-    color: white;
-    user-select: none;
-    padding-bottom: 10px;
-}
-
-.skills-con h3{
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    margin-left: 30px;
-    padding-top: 13px;
-    margin-bottom: 0;
-}
-
-.tech_types{
-    display: flex;
-}
-
-.frontend_skills{
-    margin-left: 30px;
-    color: #E49BFF;
-}
-
-.backend_skills{
-    margin-left: 8%;
-    color: #E49BFF;
-}
-
-.skills{
-    padding-left: 0;
-}
-
-.icons{
-    color: white;
-}
-
-.skills_github_con{
-    display: flex;
-    margin-top: 2%;
-}
-
-.github_contributions{
-    width: 57%;
-    border-radius: 10px;
-    margin-left: 2%;
-    background-color: black;
-    padding-bottom: 10px;
-}
-
-.github_contributions iframe{
-    padding-left: 20px;
-}
-
-.contri{
-    width: 40%;
-    margin-left: 7%;
-}
-
-.github_contributions h3{
+    width: 100;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
     color: white;
-    padding-left: 45px;
-    padding-top: 2%;
-}
-
-.git_info{
-    width: 20%;
-}
-
-.projects_con{
-    width: 95%;
-    margin: auto;
-}
-
-.projects_con h3{
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    margin-left: 5px;
-    font-style: normal;
-}
-
-.projects_card{
-    min-width: 95%;
-    background-color: black;
-    border-radius: 10px;
-    padding: 20px;
-    display: flex;
-    overflow-x: scroll;
-}
-
-.projects_card::-webkit-scrollbar{
-    display: none;
-}
-
-.projects_card a{
-    text-decoration: none;
-    min-width: 25%;
-    max-width: 25%;
-    margin-right: 2%;
-}
-
-.card{
-    background-color: white;
-    border-radius: 10px;
-    transition: transform 0.5s ease;
-}
-
-.card img{
-    width: 100%;
-    height: 150px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.card2{
-    padding-right: 20px;
-}
-
-.card:hover{
-    transform: scale(1.05);
-}
-
-.card h3{
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    margin-left: 5px;
-    font-style: normal;
-    color: black;
-    margin: 0;
-    margin-left: 15px;
-}
-
-.card p{
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-size: 0.8rem;
-    margin-left: 5px;
-    font-style: normal;
-    color: black;
-    text-align: justify;
-    padding: 15px;
-    padding-top: 5px;
-    margin: 0;
-}
-
-.card h4{
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    margin-left: 5px;
-    font-style: normal;
-    color: black;
-    margin: 0;
-    margin-left: 15px;
-}
-
-footer{
     display: flex;
     align-items: center;
     align-content: center;
+    background-color: rgba(0,0,0,0.3);
+    padding-left: 50px;
+    padding-right: 50px;
+    position: sticky;
+    top: 0;
 }
 
-footer h4{
+nav h2{
+    font-family: "Quicksand", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-left: auto;
+}
+
+nav a{
+    margin-left: 20px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+section{
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    padding-top: 3%;
+}
+
+section h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 7rem;
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+
+@keyframes animate-background {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+.name{
+    background: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnBpdHg3bWRjejNrcnN0dzF5cDRkcjM5cnl3dDZrOXptZjU4bjZkMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26ufo4EIIEdB8tX3y/giphy.webp') repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: cover;
+    animation: animate-background 5s linear infinite;
+}
+
+.greet{
+    text-align: left;
+    position: relative;
+    left: 6%;
+    font-size: 2rem;
+}
+
+section p{
+    width: 90%;
+    position: relative;
+    left: 6%;
+    margin: auto;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
-    font-size: 0.8rem;
+    font-style: normal;
+    text-align: justify;
+    margin: 0;
     color: white;
-    font-size: 1.5rem;
-    margin-left: 36px;
 }
 
-footer .social{
+.btn_con{
+    color: white;
+    position: relative;
+    left: 6%;
     margin-top: 20px;
-    margin-left: auto;
-    margin-right: 45px;
 }
 
-.github_contributions iframe{
-    width: 95%;
-    height: 130px;
+.colbtn{
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    margin-right: 20px;
 }
 
-@media (max-width: 960px){
-    
-    .skills-con{
-        font-size: 0.8rem;
-    }
-
-    .github_contributions{
-        font-size: 0.8rem;
-    }
-
-    .contri{
-        width: 20%;
-    }
-
+.git{
+    background-image: linear-gradient(to right, violet, indigo);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
-
-@media (max-width: 700px){
-    
-    .skills_github_con{
-        display: block;
-    }
-
-    .skills-con{
-        width: 95%;
-        font-size: 1rem;
-    }
-
-    .github_contributions{
-        width: 95%;
-        font-size: 1rem;
-    }
-
-    .container img{
-        width: 25%;
-    }
-
-    .projects_card a{
-        min-width: 40%;
-        max-width: 40%;
-    }
+.linked{
+    background-image: linear-gradient(to right, cornflowerblue, lightblue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
-@media (max-width: 400px){
-    .container img{
-        width: 30%;
-    }
+.res{
+    background-image: linear-gradient(to right, red, orange, yellow);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
 
-    .info{
-        margin-top: 0px;
-        position: relative;
-        top: 15px;
-    }
-
-    .info h2{
-        font-size: 1.3rem;
-        color: white;
-    }
-
-    .social a{
-        font-size: 20px;
-    }
-
-    #element{
-        font-size: 1rem;
-        color: white;
-    }
-
-    .navbar .to{
-        width: 50%;
-    }
-
-    .skills-con{
-        width: 95%;
-        font-size: 0.75rem;
-    }
-
-    .github_contributions{
-        font-size: 0.75rem;
-    }
-
-    .github_contributions iframe{
-        width: 85%;
-    }
-
-    .projects_card a{
-        min-width: 99%;
-        max-width: 99%;
-    }
-
-    .projects_card{
-        min-width: 70%;
-    }
-
-    footer h4{
-        font-size: 1rem;
-    }
-
+.x{
+    background-image: linear-gradient(to right, cornflowerblue, lightblue, white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }

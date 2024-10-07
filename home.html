@@ -3,135 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AP_web || Home</title>
-    <link rel="stylesheet" href="../static/css/home.css">
+    <title>AddyWeb</title>
+    <link rel="stylesheet" href="./static/css/home.css">
 </head>
 <body>
-    <nav>
-        <ul class="navbar">
-            <a href="home.html"><li>AddyWeb</li></a>
-            <div class="to">
-                <a href="projects.html"><li>Projects</li></a>
-                <a href="static\img\Resume.pdf" download="Resume"><li>Resume</li></a>
-            </div>
-        </ul>
-    </nav>
     <main>
-        <div class="addy_info">
-            <div class="container">
-                <img src="./static/img/dev.png" alt="adi_img">
-                <div class="info">
-                    <h2>Aditya D Patil</h2>
-                    <span id="element"></span>
-                    <ul class="social">
-                        <a href="https://www.linkedin.com/in/aditya-patil-b5a9b425a/"><i class="fi fi-brands-linkedin brand"></i></a>
-                        <a href="https://github.com/Dracgamer5643"><i class="fi fi-brands-github brand"></i></a>
-                        <a href="https://x.com/AdityaPati_04"><i class="fi fi-brands-twitter brand"></i></a>
-                    </ul>
-                </div>
+
+        <nav>
+            <h2>AddyWeb</h2>
+            <ul>
+                <a href="home.html"><li>Home</li></a>
+                <a href="#skills"><li>Skills</li></a>
+                <a href="#projects"><li>Projects</li></a>
+                <a href="#experience"><li>Experience</li></a>
+                <a href="#contacts"><li>Contact</li></a>
+            </ul>
+        </nav>
+
+        <section id="home">
+            <h1 class="greet"><span id="element"></span>,</h1>
+            <h1>I am <span class="name">Aditya Patil</span></h1>
+            <p>I have specialized in Data Science, Machine Learning, Data Analysis, Full Stack Web Development, and Python Development, bringing a comprehensive skill set to tackle complex challenges across diverse domains. </p>
+            <div class="btn_con">
+                <a href="/static/img/Resume.pdf" class="colbtn" download="Resume.pdf"><i class="fi fi-rs-resume res"></i> Resume</a>
+                <a href="https://github.com/Dracgamer5643" class="colbtn"><i class="fi fi-brands-github git"></i> Github</a>
+                <a href="https://www.linkedin.com/in/aditya-patil-b5a9b425a/" class="colbtn"><i class="fi fi-brands-linkedin linked"></i> LinkedIn</a>
+                <a href="https://x.com/AdityaPati_04" class="colbtn"><i class="fi fi-brands-twitter x"></i> Twitter</a>
             </div>
-        </div>
-    
-        <div class="skills_github_con">
-            <div class="skills-con">
-                <h3>Tech Stack</h3>
-                <div class="tech_types">
-                    <div class="frontend_skills">
-                        <h4>Frontend</h4>
-                        <ul class="skills">
-                            <li><i class="fab fa-react icons"></i> ReactJs</li>
-                            <li><i class="fab fa-html5 icons"></i> HTML5</li>
-                            <li><i class="fab fa-css3 icons"></i> CSS</li>
-                            <li><i class="fab fa-js icons"></i> Javascript</li>
-                            <li><i class="fi fi-brands-bootstrap icons"></i> Bootstrap</li>
-                        </ul>
-                    </div>
-    
-                    <div class="backend_skills">
-                        <h4>Backend</h4>
-                        <ul class="skills">
-                            <li><i class="fab fa-python icons"></i> Python</li>
-                            <li><i class="fas fa-globe icons"></i> Django</li>
-                            <li><i class="fab fa-node-js icons"></i> NodeJs</li>
-                            <li><i class="fas fa-flask icons"></i> Flask</li>
-                            <li><i class="fi fi-brands-mysql icons"></i> MySql</li>
-                            <li><i class="fas fa-database icons"></i> PosgreySql</li>
-                            <li><i class="fi fi-brands-php icons"></i> PHP</li>
-                            <li><i class="fi fi-brands-java icons"></i> Java</li>
-                        </ul>
-                    </div>
-    
-                    <div class="backend_skills">
-                        <h4>Data-Science</h4>
-                        <ul class="skills">
-                            <li><i class="fas fa-chart-bar icons"></i> PowerBi</li>
-                            <li><i class="fas fa-code icons"></i> Numpy</li>
-                            <li><i class="fas fa-table icons"></i> Pandas</li>
-                            <li><i class="fas fa-chart-line icons"></i> Matplotlib</li>
-                            <li><i class="fas fa-chart-area icons"></i> Seaborn</li>
-                            <li><i class="fas fa-brain icons"></i> Sklearn</li>
-                            <li><i class="fas fa-brain icons"></i> Tensorflow</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="github_contributions">
-                <h3>GitHub Contributions</h3>
-                <iframe src="https://ghchart.rshah.org/Dracgamer5643" frameborder="0"></iframe>
-                <img class="contri" src="https://github-readme-streak-stats.herokuapp.com/?user=Dracgamer5643" alt="GitHub Contribution Stats">
-                <img class="git_info" src="https://img.shields.io/github/followers/Dracgamer5643?label=Followers&style=social" alt="GitHub Followers">
-                <img class="git_info" src="https://img.shields.io/github/stars/Dracgamer5643?label=Total%20Stars&style=social" alt="GitHub Stars">
-            </div>
-        </div>
-    
-        <div class="projects_con">
-            <h3>Projects</h3>
-    
-            <div class="projects_card">
-                <a href="http://cosmicdestiny.lovestoblog.com/landingpage/main.html" class="card">
-                    <img src="../static/img/cosmic_destiny.png" alt="project_logo">
-                    <h3>CosmicDestiny</h3>
-                    <p>CosmicDestiny is a wedding application that connects users based on shared likes and astrological compatibility.</p>
-                </a>
-            </div>
-        </div>
-    
-        <div class="projects_con">
-            <h3>Experience</h3>
-    
-            <div class="projects_card">
-                <a href="https://www.linkedin.com/posts/aditya-patil-b5a9b425a_learntheta-internship-certificate-activity-7213809423260012544-uPu3?utm_source=share&utm_medium=member_desktop" class="card card2">
-                    <div class="info">
-                        <h4>Worked at LearnTheta as a Web-Scraper</h4>
-                        <p>June 2024 - July 2024</p>
-                    </div>
-                </a>
-                <a href="https://www.linkedin.com/posts/aditya-patil-b5a9b425a_certificate-for-completion-of-internship-activity-7147617543984259072-jllC?utm_source=share&utm_medium=member_desktop" class="card card2">
-                    <div class="info">
-                        <h4>Worked at Prodigy Infotech as a Web-Developer</h4>
-                        <p>December 2023 - January 2024</p>
-                    </div>
-                </a>
-            </div>
-        </div>
+
+            <div id="game"></div>
+
+        </section>
+
+        <section id="skills"></section>
+        <section id="projects"></section>
+        <section id="experience"></section>
+        <section id="contacts"></section>
     </main>
-    
-    <footer>
-        <h4>AddyWeb</h4>
-        <ul class="social">
-                <a href="https://www.linkedin.com/in/aditya-patil-b5a9b425a/"><i class="fi fi-brands-linkedin brand"></i></a>
-                <a href="https://github.com/Dracgamer5643"><i class="fi fi-brands-github brand"></i></a>
-                <a href="https://x.com/AdityaPati_04"><i class="fi fi-brands-twitter brand"></i></a>
-        </ul>
-    </footer>
 </body>
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="https://kit.fontawesome.com/ed26cdf758.js" crossorigin="anonymous"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Data-Scientist', 'Data-Analyst', 'Web-Developer', 'Web-Scrapper', 'Fullstack-Developer'],
-            typeSpeed: 100,
-            loop: true
-        });
-    </script>
+<script>
+    var typed = new Typed('#element', {
+    strings: ['Hello', 'सभी को नमस्ते', 'みなさん', 'Hallo an alle', 'Всем привет'],
+    typeSpeed: 100,
+    loop: true,
+    showCursor: false 
+    });
+</script>
+<script src="./static/js/home.js"></script>
 </html>
