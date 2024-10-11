@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
 @import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css');
 @import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css');
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
 
 /* Home Page */
 
@@ -13,6 +14,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #001F3F;
+    overflow-y: hidden;
 }
 
 nav{
@@ -184,10 +186,15 @@ section p{
 
 .head_title{
     font-size: 2rem;
-    color: white;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+    background: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnBpdHg3bWRjejNrcnN0dzF5cDRkcjM5cnl3dDZrOXptZjU4bjZkMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26ufo4EIIEdB8tX3y/giphy.webp') repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: cover;
+    animation: animate-background 5s linear infinite;
 }
 
 #skills{
@@ -197,6 +204,136 @@ section p{
 .skills_con{
     display: flex;
     width: 100%;
-    align-items: center;
-    align-content: center;
+}
+
+.skill_name{
+    margin: 0;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.card ul{
+    padding: 0;
+}
+
+.card{
+    width: 50%;
+    color: white;
+    background-color: rgba(0,0,0,0.3);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 20px 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.card ul li{
+    width: 60%;
+    font-weight: 200;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.card ul li:hover{
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 20px;
+}
+
+.card ul{
+    width: 100%;
+    display: block;
+    margin: 0;
+}
+
+.icon{
+    width: 15%;
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+}
+
+
+
+/* Css for project con */
+
+#projects{
+    padding-top: 70px;
+}
+
+.proCards_con{
+    width: 100%;
+    height: 60vh;
+    border: solid 2px white;
+    border-radius: 20px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.proCards_con a{
+    width: 30%;
+}
+
+.proCards{
+    width: 30%;
+    flex: 0 0 auto;
+    height: 53vh;
+    background-color: rgba(255,255,255,0.3);
+    margin-left: 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.proCards h2{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 0;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+}
+
+.proImg{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.skills_inv{
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.skills_inv img{
+    width: 10%;
+}
+
+.proCards p{
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+    font-size: 0.9rem;
+    left: 0;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.pro_links{
+    margin-left: 10px;
+}
+
+.pro_links a{
+    background-color: rgba(255,255,255,0.3);
+    padding: 5px 10px;
+    border-radius: 30px;
+}
+
+.proCards a{
+    font-size: 1.2rem;
 }
